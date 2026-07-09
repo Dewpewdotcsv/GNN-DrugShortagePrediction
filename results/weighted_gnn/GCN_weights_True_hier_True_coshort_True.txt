@@ -1,0 +1,6 @@
+ROC-AUC: 0.8838
+ROC-AUC-Boot-Mean: 0.8836
+ROC-AUC-Boot-Std: 0.0059
+PR-AUC: 0.1191
+Recall@Top10%: 0.5215
+Precision@Top10%: 0.1108
