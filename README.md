@@ -4,14 +4,14 @@ An end-to-end Machine Learning pipeline utilizing Graph Neural Networks (GNNs) t
 
 ---
 
-## 🚀 Key Results & Highlights
+## Key Results & Highlights
 * **~13% Absolute AUC Improvement:** The proposed **Hierarchical Weighted GNN** achieves a **0.884 ROC-AUC**, significantly outperforming the statistical baseline (**0.781 ROC-AUC**).
 * **High-Yield Early Warning:** Reaches a **52.2% Recall @ Top 10% Risk** (a 31% relative improvement over baseline models), making it a viable tool for active supply-chain surveillance.
 * **Ablation Studies:** Validates that representing fine-grained drug ingredients (L5 level) and their relationships to broader therapeutic groups (L4 level) is critical—collapsing the hierarchy to a flat graph causes performance to drop to 0.667 ROC-AUC.
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 ```bash
 .
 ├── src/
@@ -33,7 +33,7 @@ An end-to-end Machine Learning pipeline utilizing Graph Neural Networks (GNNs) t
 
 ---
 
-## 🛠️ Installation & Setup
+## Installation & Setup
 
 1. **Clone the repository:**
    ```bash
@@ -54,7 +54,7 @@ An end-to-end Machine Learning pipeline utilizing Graph Neural Networks (GNNs) t
 
 ---
 
-## 🔄 Reproduction Pipeline
+## Reproduction Pipeline
 
 Execute the pipeline step-by-step to preprocess data, construct graphs, train models, and run evaluation:
 
@@ -80,7 +80,7 @@ python3 src/evaluation/compare_models.py
 
 ---
 
-## 📊 Performance Comparison
+## Performance Comparison
 
 | Model | ROC-AUC | PR-AUC | Recall @ Top 10% | Precision @ Top 10% |
 | :--- | :---: | :---: | :---: | :---: |
@@ -93,6 +93,6 @@ python3 src/evaluation/compare_models.py
 
 ---
 
-## 🧪 Key Insights
+## Key Insights
 1. **The Power of Hierarchy:** Flat graph representations (excluding L5 ingredient nodes) underperform compared to simple logistic regression. Adding hierarchical structure allows the GNN to learn representation pathways from molecular drug ingredients to broad therapeutic classes.
 2. **Co-Shortage Edges:** Incorporating weighted edges based on co-occurrence correlation prevents data sparsity and routes shortage warning signals to vulnerable neighbor classes.
